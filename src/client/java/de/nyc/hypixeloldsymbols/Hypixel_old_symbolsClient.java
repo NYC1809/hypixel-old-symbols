@@ -13,5 +13,6 @@ public class Hypixel_old_symbolsClient implements ClientModInitializer {
     public void onInitializeClient() {
         LOGGER.info("Hypixel_old_symbols Mod Initialized!");
         LOGGER.info("TEST");
+        LOGGER.info("TEST2");
     }
 }
