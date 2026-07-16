@@ -3,6 +3,8 @@
   "package": "de.nyc.hypixeloldsymbols.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "PlainTextContentLiteralMixin",
+    "TextVisitFactoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1
