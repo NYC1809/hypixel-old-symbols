@@ -12,5 +12,6 @@ public class Hypixel_old_symbolsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         LOGGER.info("Hypixel_old_symbols Mod Initialized!");
+        LOGGER.info("TEST");
     }
 }
