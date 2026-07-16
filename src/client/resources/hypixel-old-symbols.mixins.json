@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "de.nyc.hypixeloldsymbols.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

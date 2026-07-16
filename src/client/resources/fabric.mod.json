@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "hypixel-old-symbols",
+  "version": "0.1.0",
+  "name": "hypixel-old-symbols",
+  "description": "A Hypixel Skyblock mod that reverts the new symbols to the old ones",
+  "authors": [
+    "NYC_1809"
+  ],
+  "contact": {
+    "sources": "https://github.com/NYC1809/hypixel-old-symbols"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.nyc.hypixeloldsymbols.Hypixel_old_symbolsClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "hypixel-old-symbols.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": ">=1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
