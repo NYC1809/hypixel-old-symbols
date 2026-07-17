@@ -49,14 +49,14 @@ public final class SymbolReplacementConfig {
         map.put("\uE016", "\u259A");
         map.put("\uE00F", "\u259A");
         map.put("\uE01C", "\u2727");
-        map.put("\uE053", "\u2618");
+        //map.put("\uE053", "\u2618");
 
         map.put("\uE019", "\u0D60");
         map.put("\uE02B", "\uE02B");
-        map.put("\uE051", "\u2618");
+        //map.put("\uE051", "\u2618");
 
         map.put("\uE023", "\u222E");
-        map.put("\uE054", "\u2618");
+        //map.put("\uE054", "\u2618");
 
         map.put("\uE00C", "\u2602");
         map.put("\uE021", "\u03B1");
