@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "hypixel-old-symbols",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "name": "Hypixel old symbols",
   "description": "A Hypixel Skyblock mod that reverts the new symbols to the old ones",
   "authors": [
@@ -26,8 +26,8 @@
   ],
   "depends": {
     "fabricloader": ">=0.17.2",
-    "minecraft": ">=1.21.11",
-    "java": ">=21",
+    "minecraft": ">=26.2",
+    "java": ">=25",
     "fabric-api": "*"
   }
 }
