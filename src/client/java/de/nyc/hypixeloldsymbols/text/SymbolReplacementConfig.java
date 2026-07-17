@@ -113,25 +113,19 @@ public final class SymbolReplacementConfig {
                 throw new JsonParseException("[Hypixel-old-symbols] Config file was empty");
             }
 
+            // Keep user-managed entries as-is for existing files so commented/removed
+            // defaults stay disabled across restarts.
             if (config.replacements == null) {
-                config.replacements = defaultReplacements();
-            } else {
-                LinkedHashMap<String, String> merged = defaultReplacements();
-                merged.putAll(config.replacements);
-                config.replacements = merged;
-            }
-
-            String normalizedContent = serialize(config);
-            if (!normalizedContent.equals(fileContent)) {
-                writeString(normalizedContent);
+                config.replacements = new LinkedHashMap<>();
             }
 
             return config;
-        } catch (IOException | JsonParseException exception) {
+        } catch (JsonParseException exception) {
+            Hypixel_old_symbolsClient.LOGGER.error("[Hypixel-old-symbols] Failed to parse symbol replacement config from {}. Keeping file unchanged.", CONFIG_PATH, exception);
+            return new SymbolReplacementConfig();
+        } catch (IOException exception) {
             Hypixel_old_symbolsClient.LOGGER.error("[Hypixel-old-symbols] Failed to read symbol replacement config from {}", CONFIG_PATH, exception);
-            SymbolReplacementConfig fallback = new SymbolReplacementConfig();
-            write(fallback);
-            return fallback;
+            return new SymbolReplacementConfig();
         }
     }
 
