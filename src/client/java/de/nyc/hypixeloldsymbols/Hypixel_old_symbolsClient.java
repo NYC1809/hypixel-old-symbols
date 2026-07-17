@@ -13,6 +13,6 @@ public class Hypixel_old_symbolsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         SymbolReplacementService.initialize();
-        LOGGER.info("Hypixel_old_symbols Mod Initialized!");
+        LOGGER.info("[Hypixel-old-symbols] Hypixel_old_symbols Mod Initialized!");
     }
 }

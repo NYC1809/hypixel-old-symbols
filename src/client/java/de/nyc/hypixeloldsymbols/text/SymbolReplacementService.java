@@ -23,7 +23,7 @@ public final class SymbolReplacementService {
             .toList();
 
         Hypixel_old_symbolsClient.LOGGER.info(
-            "Loaded {} symbol replacement(s); enabled={}",
+            "[Hypixel-old-symbols] Loaded {} symbol replacement(s); enabled={}",
             replacements.size(),
             enabled
         );
